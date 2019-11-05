@@ -4,6 +4,7 @@
     <modules>
       <module fileurl="file://$PROJECT_DIR$/.idea/modules/aggregator.iml" filepath="$PROJECT_DIR$/.idea/modules/aggregator.iml" />
       <module fileurl="file://$PROJECT_DIR$/core/core.iml" filepath="$PROJECT_DIR$/core/core.iml" />
+      <module fileurl="file://$PROJECT_DIR$/slick/slick.iml" filepath="$PROJECT_DIR$/slick/slick.iml" />
       <module fileurl="file://$PROJECT_DIR$/.idea/modules/stanby-log-analysis.iml" filepath="$PROJECT_DIR$/.idea/modules/stanby-log-analysis.iml" />
       <module fileurl="file://$PROJECT_DIR$/.idea/modules/stanby-log-analysis-build.iml" filepath="$PROJECT_DIR$/.idea/modules/stanby-log-analysis-build.iml" />
     </modules>

@@ -28,12 +28,32 @@
             <PaintGroupHighlightMap />
           </value>
         </entry>
+        <entry key="$PROJECT_DIR$/core/build.sbt">
+          <value>
+            <PaintGroupHighlightMap />
+          </value>
+        </entry>
         <entry key="$PROJECT_DIR$/core/src/main/scala/com/stanby/model/Key.scala">
           <value>
             <PaintGroupHighlightMap />
           </value>
         </entry>
+        <entry key="$PROJECT_DIR$/database/build.sbt">
+          <value>
+            <PaintGroupHighlightMap />
+          </value>
+        </entry>
+        <entry key="$PROJECT_DIR$/database/database.iml">
+          <value>
+            <PaintGroupHighlightMap />
+          </value>
+        </entry>
         <entry key="$PROJECT_DIR$/docker-compose.yml">
+          <value>
+            <PaintGroupHighlightMap />
+          </value>
+        </entry>
+        <entry key="$PROJECT_DIR$/docker/gcloud/bigquery/Dockerfile">
           <value>
             <PaintGroupHighlightMap />
           </value>
@@ -44,6 +64,16 @@
           </value>
         </entry>
         <entry key="$PROJECT_DIR$/project/plugins.sbt">
+          <value>
+            <PaintGroupHighlightMap />
+          </value>
+        </entry>
+        <entry key="$PROJECT_DIR$/slick/build.sbt">
+          <value>
+            <PaintGroupHighlightMap />
+          </value>
+        </entry>
+        <entry key="$PROJECT_DIR$/slick/slick.iml">
           <value>
             <PaintGroupHighlightMap />
           </value>

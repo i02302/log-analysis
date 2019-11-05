@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ScalaCompilerConfiguration">
-    <profile name="sbt 1" modules="aggreegator,aggregator,aggregator_4317,aggregator_5670,aggregator_9500,core,stanby-log-analysis" />
+    <profile name="sbt 1" modules="aggreegator,aggregator,aggregator_4317,aggregator_5670,aggregator_9500,core,database,databse,stanby-log-analysis" />
   </component>
 </project>

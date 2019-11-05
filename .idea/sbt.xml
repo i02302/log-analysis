@@ -10,6 +10,7 @@
             <option value="$PROJECT_DIR$" />
             <option value="$PROJECT_DIR$/aggregator" />
             <option value="$PROJECT_DIR$/core" />
+            <option value="$PROJECT_DIR$/database" />
             <option value="$PROJECT_DIR$/project" />
           </set>
         </option>

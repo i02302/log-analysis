@@ -1,4 +1,4 @@
-name := "core"
+name := "slick"
 
 version := "0.1"
 

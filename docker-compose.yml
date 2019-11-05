@@ -13,11 +13,6 @@ services:
       MINIO_SECRET_KEY: MINIO_SECRET_KEY
     command: server /export
 
-  bigtable:
-    build: docker/gcloud/bigtable
-    ports:
-      - 8086:8086
-
   database:
     image: mysql:8.0
     healthcheck:

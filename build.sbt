@@ -2,8 +2,10 @@ name := "stanby-log-analysis"
 
 version := "0.1"
 
-scalaVersion := "2.12.9"
+scalaVersion := "2.13.1"
 
 lazy val core = project
 
-lazy val aggregator = project.dependsOn(core)
+lazy val slick = project.dependsOn(core)
+
+lazy val aggregator = project.dependsOn(core, slick)
