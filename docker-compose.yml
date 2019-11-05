@@ -1,0 +1,55 @@
+version: '3'
+
+services:
+
+  s3:
+    image: minio/minio
+    ports:
+      - 19000:9000
+    volumes:
+      - ./docker/aws/s3/data:/export
+    environment:
+      MINIO_ACCESS_KEY: MINIO_ACCESS_KEY
+      MINIO_SECRET_KEY: MINIO_SECRET_KEY
+    command: server /export
+
+  bigtable:
+    build: docker/gcloud/bigtable
+    ports:
+      - 8086:8086
+
+  database:
+    image: mysql:8.0
+    healthcheck:
+      test: ["CMD", "mysql", "-u", "aggregator", "--password=password", "-e", "quit"]
+      interval: 15s
+      timeout: 5s
+      retries: 5
+    ports:
+      - 3307:3306
+    restart: always
+    environment:
+      - MYSQL_ALLOW_EMPTY_PASSWORD=1
+      - MYSQL_USER=aggregator
+      - MYSQL_PASSWORD=password
+      - TZ=Asia/Tokyo
+    command: mysqld --character-set-server=utf8mb4 --collation-server=utf8mb4_unicode_ci
+
+  flyway:
+    image: boxfuse/flyway:5.2.4-alpine
+    command: -url=jdbc:mysql://database -schemas=aggr_db -user=root -password= -connectRetries=60 migrate
+    volumes:
+      - ./docker/database/aggr_db:/flyway/sql
+    depends_on:
+      - database
+
+  jupyter-notebook:
+    image: jupyter/datascience-notebook
+    environment:
+      - JUPYTER_ENABLE_LAB=yes
+    ports:
+      - 8888:8888
+
+networks:
+  default:
+    driver: bridge
